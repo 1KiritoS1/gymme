@@ -1,0 +1,76 @@
+/* Arrows */
+.slick-prev,
+.slick-next
+{      
+    width: 40px;
+    height: 40px;
+
+    position: absolute;
+    right: 64px;
+    bottom: -80px;
+    
+    display: block;
+    transition: all .2s ease;
+
+    padding: 0;
+    cursor: pointer;
+
+    border: none;
+    font-size: 0;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+    opacity: 0.5;
+}
+
+.slick-prev
+{   
+    margin-right: 72px;
+    background: url('../img/programs/left.svg') no-repeat;
+}
+
+.slick-next
+{
+    background: url('../img/programs/right.svg') no-repeat;
+}
+
+/* --- Programs --- */
+.programs
+.slick-slide { 
+    margin: 0 32px;
+}
+
+.programs
+.slider-item img { 
+    max-width: 100%;
+} 
+
+/* --- Community --- */
+.community .slick-track {
+	display: flex;
+	align-items: center;
+	gap: 32px;
+}
+
+.community .slick-slide {
+    margin: inherit;
+}
+
+.community__wrap .slick-arrow {
+    bottom: 0;
+}
+
+.community .slick-prev,
+.community .slick-next {
+    left: 80px;
+}
+
+.community .slick-prev:hover,
+.community .slick-next:hover {
+    opacity: 0.7;
+}
+
+.community .slick-next {
+    margin-left: 72px;
+}
