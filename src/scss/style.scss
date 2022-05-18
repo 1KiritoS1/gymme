@@ -693,6 +693,10 @@ button, input, select, option, textarea {
 
 /* --- Media --- */
 @media screen and (max-width: 1200px) {
+	.header__inner {
+		padding: 0 10px;
+	}
+
 	.nav__link {
 		margin-right: 30px;
 	}
@@ -735,7 +739,6 @@ button, input, select, option, textarea {
 			width: 100%;
 			height: 2px;
 			background: #fff;
-			// transition: all .3s ease;
 			transition: .25s ease-in-out;
 			position: absolute;
 			top: 9px;
@@ -748,7 +751,6 @@ button, input, select, option, textarea {
 			width: 100%;
 			height: 2px;
 			background: #fff;
-			// transition: all .3s ease;
 			transition: .25s ease-in-out;
 			position: absolute;
 			right: 0;
@@ -769,13 +771,11 @@ button, input, select, option, textarea {
 
 			&:after {
 				bottom: 9px;
-    			// transform: rotate(45deg);
 				transform: rotate(-135deg);
 			}
 
 			&:before {
 				top: 9px;
-    			// transform: rotate(-45deg);
 				transform: rotate(135deg);
 			}
 		}
@@ -800,6 +800,7 @@ button, input, select, option, textarea {
 		z-index: 10;
 
 		&.active {
+			overflow: auto;
 			visibility: visible;
     		left: 0;
 		}
@@ -811,7 +812,7 @@ button, input, select, option, textarea {
 		align-items: center;
 		
 		position: fixed;
-		top: 83%;
+		bottom: 7%;
 		left: -100%;
 		width: 100%;
 		height: 46px;
@@ -822,7 +823,7 @@ button, input, select, option, textarea {
 
 		&.active {
 			visibility: visible;
-    		left: 0;
+    		left: -30%;
 		}
 
 		.log {
@@ -847,7 +848,7 @@ button, input, select, option, textarea {
 		transition-duration: 0.25s;
 		
 		&:last-child {
-			margin-bottom: 60px !important;
+			margin-bottom: 270px !important;
 		}
 	}
 
@@ -920,12 +921,20 @@ button, input, select, option, textarea {
 
 	.community {
 		padding-bottom: 230px;
+
+		.slick-next,
+		.slick-prev {
+			top: 650px;
+			left: 45.5%;
+			transform: translateX(-50%);
+		}
 	}
 
 	.community__title {
 		display: block;
 		max-width: 305px;
-		margin: 0 auto;	
+		margin: 0 auto 50px;
+		padding-right: 35px;	
 	}
 
 	.community {
@@ -1023,6 +1032,16 @@ button, input, select, option, textarea {
 @media screen and (max-width: 575px) {
 	.header {
 		padding-top: 20px;
+	}
+
+	.register {
+		display: none;
+	}
+
+	.nav__link {
+		&:last-child {
+			margin-bottom: 200px !important;
+		}
 	}
 
 	.hero {

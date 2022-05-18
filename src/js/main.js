@@ -43,10 +43,8 @@ $(function() {
 		slidesToScroll: 1,
 		appendArrows: $('.community__wrap'),
 		variableWidth: true,
-		waitForAnimate: false,
-		
-		// centerMode: true,
-		// centerPadding: '45px',
+		centerMode: true,
+		centerPadding: '45px',
 	})
 
 	//* --- FAQ Accordion --- *//
@@ -95,5 +93,4 @@ $(function() {
 			}, 1000);
 		});
 	});
-	
 });

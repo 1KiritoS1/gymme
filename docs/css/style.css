@@ -964,6 +964,10 @@ button, input, select, option, textarea {
 
 /* --- Media --- */
 @media screen and (max-width: 1200px) {
+  .header__inner {
+    padding: 0 10px;
+  }
+
   .nav__link {
     margin-right: 30px;
   }
@@ -1053,6 +1057,7 @@ button, input, select, option, textarea {
     z-index: 10;
   }
   .nav.active {
+    overflow: auto;
     visibility: visible;
     left: 0;
   }
@@ -1062,7 +1067,7 @@ button, input, select, option, textarea {
     justify-content: center;
     align-items: center;
     position: fixed;
-    top: 83%;
+    bottom: 7%;
     left: -100%;
     width: 100%;
     height: 46px;
@@ -1073,7 +1078,7 @@ button, input, select, option, textarea {
   }
   .register.active {
     visibility: visible;
-    left: 0;
+    left: -30%;
   }
   .register .log {
     font-size: 14px;
@@ -1094,7 +1099,7 @@ button, input, select, option, textarea {
     transition-duration: 0.25s;
   }
   .nav__link:last-child {
-    margin-bottom: 60px !important;
+    margin-bottom: 270px !important;
   }
 
   .hero {
@@ -1162,11 +1167,18 @@ button, input, select, option, textarea {
   .community {
     padding-bottom: 230px;
   }
+  .community .slick-next,
+.community .slick-prev {
+    top: 650px;
+    left: 45.5%;
+    transform: translateX(-50%);
+  }
 
   .community__title {
     display: block;
     max-width: 305px;
-    margin: 0 auto;
+    margin: 0 auto 50px;
+    padding-right: 35px;
   }
 
   .community {
@@ -1261,6 +1273,14 @@ button, input, select, option, textarea {
 @media screen and (max-width: 575px) {
   .header {
     padding-top: 20px;
+  }
+
+  .register {
+    display: none;
+  }
+
+  .nav__link:last-child {
+    margin-bottom: 200px !important;
   }
 
   .hero {
